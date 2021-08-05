@@ -1,0 +1,99 @@
+// Colors
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-blue: hsl(185, 75%, 39%);
+$dark-gray-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+// Fonts
+$body-font: 'Kumbh Sans', sans-serif;
+
+// Global
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $body-font;
+    background: $dark-cyan;
+}
+
+// Card
+.container{
+    background: white;
+    text-align: center;
+    border-radius: 1.2rem;
+
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 70%;
+    max-width: 400px;
+
+    z-index: 99;
+
+    &__top-background{
+        height: 30%;
+        width: 100%;
+        border-radius: 1.2rem 1.2rem 0 0;
+    }
+
+    &__main-info{
+        margin-top: -15%;
+
+        img{
+            border-radius: 100%;
+            border: 5px solid white;
+        }
+
+        .profile-name{
+            margin: .8em 0;
+            font-weight: 700;
+        }
+
+        .user-age{
+            font-weight: 400;
+            color: $dark-gray;
+            padding-left: .5em;
+        }
+
+        .city{
+            margin-bottom: 2em;
+            color: $dark-gray;
+        }
+    }
+
+    &__stats{
+        display: flex;
+        justify-content: space-evenly;
+
+        border-top: 1px solid $dark-gray;
+        padding: 2em;
+
+        .stat p:first-child{
+            font-weight: 700;
+            padding-bottom: .5em;
+        }
+
+        .stat p:nth-child(2){
+            font-size: .8rem;
+            color: $dark-gray;
+            letter-spacing: 2px;
+        }
+    }
+    
+}
+
+// Footer
+.attribution {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+}
+  
+.attribution a {
+    color: #3e52a3;
+}
